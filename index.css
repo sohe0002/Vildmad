@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: var(--baggrund);
+}
+
+.knap {
+  background-color: var(--farve7);
+  border: 2px solid var(--farve1);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  text-align: center;
+}
+
+.forside_h1 {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -205%);
+  text-align: center;
+  font-size: 64px;
+}
+
+.forside_h2 {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -105%);
+  text-align: center;
+  font-size: 27px;
+}
+
+.tekster_grid_1_1 {
+  background-color: var(--farve7);
+  padding: 70px 25px 30px 25px;
+}
+
+.forside_tekst {
+  background-color: var(--baggrund);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px 10px 30px 10px;
+}
+.info_tekst {
+  background-color: var(--baggrund);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px 10px 30px 10px;
+}
+
+p {
+  line-height: 30px;
+  color: var(--farve3);
+}
+
+@media (min-width: 800px) {
+  .tekster_grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.forside_billede {
+  width: 100%;
+  position: relative;
+}
+
+.forside_billede img {
+  display: none; /* Skjul standardvisning af begge billeder */
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .mobile-image {
+    display: block; /* Vis mobilbilledet */
+  }
+}

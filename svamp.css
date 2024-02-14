@@ -24,7 +24,6 @@ header {
 .risk {
   background-color: var(--farve5);
   border-radius: 20px;
-
   position: absolute;
   z-index: 100;
   top: 650px;
