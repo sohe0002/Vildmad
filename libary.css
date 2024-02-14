@@ -1,0 +1,50 @@
+main {
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+ol li {
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  padding: 0px;
+}
+ol {
+  padding: 0px;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--farve2);
+  font-family: Helvetica, sans-serif, Arial;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+main section {
+  height: 100vh;
+  padding-left: 300px;
+}
+#may {
+  background-color: blue;
+}
+#months h2 {
+  padding: 0px;
+  color: var(--farve2);
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+#months {
+  padding: 0px 0px 0px 40px;
+  position: fixed;
+}
+#months a.active {
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.linje {
+  border-bottom: 2px solid var(--farve2);
+  box-sizing: border-box;
+}

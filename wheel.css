@@ -1,35 +1,96 @@
-/* .wheel_1 {
-  width: 12.71325rem;
-  height: 13.31863rem;
-  transform: rotate(-149.688deg);
-  flex-shrink: 0;
-  background-color: #004836;
-  border-radius: 20%;
-  stroke-width: 2px;
-  stroke: #004836;
-} */
-.wheel_2 {
-  background-color: #004836;
-  /* width: 204.29px;
-  height: 215.63px;
-  padding-top: 133.6px;
-  padding-bottom: 133.6px;
-  padding-left: 204.29px;
-  padding-right: 204.29px; */
-  width: 204.29px;
-  height: 215.63px;
-
-  transform: skewX(-45deg) scaleY(0.8);
-}
-
-.wheel_1 {
-  background-color: #3498db;
-  width: 100px;
-  height: 120px;
-  border-radius: 20%;
-  clip-path: polygon(0 0, 100% 1%, 84% 100%, 16% 100%);
-}
-
 body {
-  overflow: hidden;
+  background-color: var(--baggrund);
+  cursor: url("./ikoner/pil2.svg"), auto;
+}
+
+main {
+  margin-inline: auto;
+}
+.wheel_box {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  place-items: center;
+  width: 300px;
+}
+.wheel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2px;
+  background-color: #fffef8;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 30px;
+}
+
+.wheel:hover {
+  scale: 110%;
+  transition: 0.2s;
+}
+img {
+  width: 40%;
+}
+.top {
+  display: none;
+}
+
+.wheel_text_box h3 {
+  text-align: center;
+  font-family: "h1", Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: var(--farve2);
+}
+.wheel_text_box p {
+  text-align: center;
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: var(--farve3);
+}
+@media (min-width: 800px) {
+  .wheel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2px;
+    background-color: #fffef8;
+    width: 100px;
+    height: 120px;
+    clip-path: polygon(
+      0% 15%,
+      15% 85%,
+      30% 95%,
+      70% 95%,
+      85% 85%,
+      100% 15%,
+      85% 0%,
+      15% 0%
+    );
+  }
+
+  .wheel p {
+    text-align: center;
+    color: var(--farve3);
+  }
+
+  img {
+    width: 50%;
+  }
+  .wheel_box h2 {
+    font-family: "h1", Helvetica, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 2.25em;
+    color: var(--farve2);
+  }
+  .top {
+    text-align: center;
+    display: block;
+    font-family: "h1", Helvetica, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 6em;
+    color: var(--farve2);
+  }
 }
