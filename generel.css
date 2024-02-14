@@ -1,0 +1,105 @@
+/* fonte */
+@font-face {
+  font-family: "h1";
+  src: url(./fonte/titanone-regular-webfont.woff2);
+}
+@font-face {
+  font-family: "mire1";
+  src: url(./fonte/MierA-Regular.woff2);
+}
+
+/* farver */
+:root {
+  --baggrund: #f5f3e5;
+  --farve1: #809671;
+  --farve2: #c02222;
+  --farve3: #493847;
+  --farve4: #d9dbcd;
+  --farve5: #cdd1b6;
+  --farve6: #b6b9a0;
+  --farve7: #d3dbcb;
+}
+
+/* fonte  */
+body {
+  font-size: 16px; /* Fallback for ældre browsere */
+  font-size: 1em; /* Standard størrelse for moderne browsere, 1em = 16px */
+}
+h1 {
+  font-family: "h1", Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 6.25em;
+  color: var(--farve2);
+}
+
+p {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 1, 25em;
+}
+
+.wheel h2 {
+  font-family: "h1", Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 2.25em;
+  color: var(--farve2);
+}
+
+.forside h2 {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 2.25em;
+  color: var(--farve3);
+}
+/* bruges også på libaryr måneder men farverven skal skiftest på texten */
+h2 {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 2.25em;
+  color: var(--farve3);
+}
+.wheel h3 {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 2em;
+  color: var(--farve3);
+}
+/* side i libary */
+.li a {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: var(--farve2);
+}
+/* heeder */
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+ul#menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.logo img {
+  width: 60px;
+}
+ul#menu li a {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 1.16em;
+  color: var(--farve3);
+}
+.active {
+  text-decoration: none;
+  font-family: "h1" Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 1.16em;
+  color: var(--farve2);
+}
