@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main,
+header {
+  background-color: var(--baggrund);
+}
+
+.img_risk {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.risk {
+  background-color: var(--farve5);
+  border-radius: 20px;
+
+  position: absolute;
+  z-index: 100;
+  top: 650px;
+  left: 75%;
+  max-width: 90px;
+  transform: translate(17%, -42%);
+}
+
+.risk h2 {
+  text-align: center;
+}
+
+.pil {
+  background-color: var(--farve5);
+  border-radius: 20px;
+
+  position: absolute;
+  z-index: 100;
+  top: 325px;
+  left: 5%;
+  max-width: 50px;
+  transform: translate(-40%, -10%);
+}
+
+.img_svamp {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1000px;
+  position: absolute;
+  z-index: 100;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(1px 28px 3px #5e734f);
+  max-width: 310px;
+}
+
+.navn_svamp {
+  color: var(--baggrund);
+  background-color: var(--farve1);
+  padding: 400px 0 80px 0;
+  text-align: center;
+  position: relative;
+  padding-top: 200px;
+  font-size: 50px;
+}
+
+.space_top {
+  background-color: var(--baggrund);
+  padding-top: 250px;
+}
+
+.tekster {
+  background-color: var(--baggrund);
+  padding: 30px;
+  margin-top: 90px;
+}
+
+.description {
+  background-color: var(--farve6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.sankested {
+  background-color: var(--farve4);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.foraging {
+  background-color: var(--farve5);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.saeson_tekst {
+  background-color: var(--farve6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 30px;
+  color: var(--farve3);
+}
+
+@media (min-width: 800px) {
+  .tekster_grid_2_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+
+  .tekster_grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
