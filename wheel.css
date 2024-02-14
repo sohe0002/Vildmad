@@ -23,23 +23,13 @@
 }
 
 .wheel_1 {
-  width: 20px;
-  height: 30px;
   background-color: #3498db;
-  position: relative;
-  transform: skewX(-50deg);
-  transform-origin: 0;
+  width: 100px;
+  height: 120px;
+  border-radius: 20%;
+  clip-path: polygon(0 0, 100% 1%, 84% 100%, 16% 100%);
 }
 
-.wheel_1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #e74c3c;
-  transform: skewX(50deg);
-  transform-origin: 0;
-  z-index: -1;
+body {
+  overflow: hidden;
 }
