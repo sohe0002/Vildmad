@@ -52,6 +52,10 @@ header {
   padding: 70px 25px 30px 25px;
 }
 
+.tekster_grid_1_1 h2 {
+  padding-bottom: 15px;
+}
+
 .forside_tekst {
   background-color: var(--baggrund);
   border-radius: 20px;
@@ -76,21 +80,22 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  .mobile-image {
+    display: none; /* Skjul mobilbilledet */
+  }
 }
 
 .forside_billede {
   width: 100%;
   position: relative;
-}
-
-.forside_billede img {
-  display: none; /* Skjul standardvisning af begge billeder */
-  width: 100%;
-  height: auto;
+  box-shadow: 0px 43px 73px -23px rgba(128, 150, 113, 0.77);
+  -webkit-box-shadow: 0px 43px 73px -23px rgba(128, 150, 113, 0.77);
+  -moz-box-shadow: 0px 43px 73px -23px rgba(128, 150, 113, 0.77);
 }
 
 @media (max-width: 800px) {
-  .mobile-image {
-    display: block; /* Vis mobilbilledet */
+  .laptop-image {
+    display: none; /* Skjul laptopbilledet */
   }
 }
