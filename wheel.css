@@ -62,7 +62,6 @@ a {
     max-width: 100%;
     /* border-radius: 50%; */
 
-    border: solid 5px tomato;
     transition: 0.15s;
     clip-path: polygon(
       0% 15%,
@@ -149,9 +148,10 @@ a {
     flex-direction: column;
     padding-top: 2px;
     background-color: #fffef8;
+    border-radius: 50%;
     width: 100px;
-    height: 120px;
-    clip-path: polygon(
+    height: 100px;
+    /* clip-path: polygon(
       0% 15%,
       15% 85%,
       30% 95%,
@@ -160,7 +160,7 @@ a {
       100% 15%,
       85% 0%,
       15% 0%
-    );
+    ); */
   }
   /* .wheel_box {
     transform-origin: center;
