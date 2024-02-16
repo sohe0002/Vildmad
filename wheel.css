@@ -2,7 +2,9 @@ body {
   background-color: var(--baggrund);
   cursor: url("./ikoner/pil2.svg"), auto;
 }
-
+* {
+  box-sizing: border-box;
+}
 main {
   margin-inline: auto;
 }
@@ -50,7 +52,97 @@ img {
   font-size: 1.25em;
   color: var(--farve3);
 }
+a {
+  text-decoration: none;
+}
 @media (min-width: 800px) {
+  /* billederen roter der inden fjern img  */
+  .circle-container img {
+    display: block;
+    max-width: 100%;
+    /* border-radius: 50%; */
+
+    border: solid 5px tomato;
+    transition: 0.15s;
+    clip-path: polygon(
+      0% 15%,
+      15% 85%,
+      30% 95%,
+      70% 95%,
+      85% 85%,
+      100% 15%,
+      85% 0%,
+      15% 0%
+    );
+  }
+
+  :root {
+    --num-elements: 12;
+    --circle-radius: 40rem;
+    font-size: 16px;
+  }
+  .circle-container {
+    position: relative;
+    width: var(--circle-radius);
+    height: var(--circle-radius);
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    margin: 5rem auto 0;
+    border: solid 5px tomato;
+  }
+
+  .circle-container > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3rem;
+    width: 6rem;
+    height: 6rem;
+    transform: rotate(calc(360 / var(--num-elements) * var(--deg)))
+      translate(calc(var(--circle-radius) / 2))
+      rotate(calc(360 / var(--num-elements) * calc(var(--deg) * -1)));
+  }
+  .circle-container a {
+    transform: rotate(calc(90deg + (30 * var(--deg))));
+  }
+  .circle-container > *:nth-of-type(1) {
+    --deg: 1deg;
+  }
+  .circle-container > *:nth-of-type(2) {
+    --deg: 2deg;
+  }
+  .circle-container > *:nth-of-type(3) {
+    --deg: 3deg;
+  }
+  .circle-container > *:nth-of-type(4) {
+    --deg: 4deg;
+  }
+  .circle-container > *:nth-of-type(5) {
+    --deg: 5deg;
+  }
+  .circle-container > *:nth-of-type(6) {
+    --deg: 6deg;
+  }
+  .circle-container > *:nth-of-type(7) {
+    --deg: 7deg;
+  }
+  .circle-container > *:nth-of-type(8) {
+    --deg: 8deg;
+  }
+  .circle-container > *:nth-of-type(9) {
+    --deg: 9deg;
+  }
+  .circle-container > *:nth-of-type(10) {
+    --deg: 10deg;
+  }
+  .circle-container > *:nth-of-type(11) {
+    --deg: 11deg;
+  }
+  .circle-container > *:nth-of-type(12) {
+    --deg: 12deg;
+  }
   .wheel {
     display: flex;
     align-items: center;
@@ -70,11 +162,26 @@ img {
       15% 0%
     );
   }
+  /* .wheel_box {
+    transform-origin: center;
+    position: relative;
+  } */
+  /* .wheel-container {
+    transform-origin: center;
+  } */
 
   .wheel p {
     text-align: center;
     color: var(--farve3);
   }
+
+  /* .wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } */
 
   img {
     width: 50%;
