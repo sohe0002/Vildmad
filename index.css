@@ -14,6 +14,10 @@ header {
   background-color: var(--baggrund);
 }
 
+footer {
+  background-color: var(--farve7);
+}
+
 .tombola {
   height: 60px;
 }

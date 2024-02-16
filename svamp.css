@@ -15,6 +15,10 @@ header {
   background-color: var(--baggrund);
 }
 
+footer {
+  background-color: var(--baggrund);
+}
+
 .img_risk {
   margin-left: auto;
   margin-right: auto;
@@ -80,6 +84,7 @@ header {
 .tekster {
   background-color: var(--baggrund);
   padding: 30px;
+  padding-bottom: 100px;
   margin-top: 90px;
 }
 
