@@ -14,84 +14,8 @@ header {
   background-color: var(--baggrund);
 }
 
-footer h2 {
-  color: var(--farve3);
-}
-
-footer {
-  background-color: var(--farve7);
-}
-
-.footer_grid_1_1_1 {
-  background-color: var(--farve1);
-  padding: 0 20px 50px 40px;
-}
-
-.footer_pictures {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer_pictures2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.cooperates {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  gap: 20px;
-}
-
-.footer_pictures img {
-  width: 60px;
-}
-
 .tombola {
   height: 60px;
-}
-
-.find img {
-  width: 70px;
-}
-
-.find_grid {
-  display: flex;
-  flex-direction: start;
-  padding-top: 50px;
-}
-
-.find {
-  padding-bottom: 50px;
-}
-
-#mail,
-#phone,
-#name {
-  background-color: var(--baggrund);
-  width: 200px;
-  margin-bottom: 20px;
-  padding: 7px;
-}
-
-.form-name p,
-.form-mail p,
-.form-phone p {
-  color: var(--baggrund);
-  font-family: Helvetica, sans-serif, Arial;
-}
-
-.form-name p {
-  padding-top: 50px;
-}
-
-.knap2 {
-  background-color: var(--farve7);
-  border: 2px solid var(--farve1);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-family: "mire1";
 }
 
 .knap {

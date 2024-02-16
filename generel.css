@@ -77,7 +77,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 0px 20px;
 }
 ul#menu {
   list-style: none;
@@ -96,10 +96,104 @@ ul#menu li a {
   font-size: 1.16em;
   color: var(--farve3);
 }
-.active {
+
+/*active classen er udkommenteret*/
+/*.active {
   text-decoration: none;
   font-family: "h1" Helvetica, sans-serif, Arial;
   font-weight: 400;
   font-size: 1.16em;
   color: var(--farve2);
+} */
+
+footer h2 {
+  color: var(--farve3);
+}
+
+footer {
+  background-color: var(--farve7);
+}
+
+.footer_grid_1_1_1 {
+  background-color: var(--farve1);
+  padding: 0 20px 50px 40px;
+}
+
+.footer_pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_pictures2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cooperates {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 20px;
+}
+
+.footer_pictures img {
+  width: 60px;
+}
+
+.find img {
+  width: 70px;
+}
+
+.find_grid {
+  display: flex;
+  flex-direction: start;
+  padding-top: 50px;
+}
+
+.find {
+  padding-bottom: 50px;
+}
+
+#mail,
+#phone,
+#name {
+  background-color: var(--baggrund);
+  width: 200px;
+  margin-bottom: 20px;
+  padding: 7px;
+}
+
+.form-name p,
+.form-mail p,
+.form-phone p {
+  color: var(--baggrund);
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+.form-name p {
+  padding-top: 50px;
+}
+
+.knap2 {
+  background-color: var(--farve7);
+  border: 2px solid var(--farve1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "mire1";
+}
+
+@media (min-width: 800px) {
+  .footer_grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0% 12% 5% 12%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer_grid_1_1_1 {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+  }
 }
