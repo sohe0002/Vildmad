@@ -57,31 +57,31 @@ footer {
 .find_grid {
   display: flex;
   flex-direction: start;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .find {
   padding-bottom: 50px;
 }
 
-.phone {
+#mail,
+#phone,
+#name {
   background-color: var(--baggrund);
   width: 200px;
   margin-bottom: 20px;
   padding: 7px;
-  margin-top: 20px;
 }
 
-p.phone,
-p.mail {
-  color: var(--farve6);
+.form-name p,
+.form-mail p,
+.form-phone p {
+  color: var(--baggrund);
+  font-family: Helvetica, sans-serif, Arial;
 }
 
-.mail {
-  background-color: var(--baggrund);
-  width: 200px;
-  margin-bottom: 20px;
-  padding: 7px;
+.form-name p {
+  padding-top: 50px;
 }
 
 .knap2 {
@@ -129,37 +129,42 @@ p.mail {
   font-family: "mire1";
 }
 
-.tekster_grid_1_1 {
+.tekster_grid_1_1_1 {
   background-color: var(--farve7);
-  padding: 70px 25px 30px 25px;
+  padding: 70px 25px 10px 25px;
 }
 
-.tekster_grid_1_1 h2 {
+.tekster_grid_1_1_1 h2 {
   padding-bottom: 15px;
 }
 
-.forside_tekst {
-  background-color: var(--baggrund);
-  border-radius: 20px;
-  padding: 30px;
-  margin: 30px 10px 30px 10px;
-}
-.info_tekst {
-  background-color: var(--baggrund);
-  border-radius: 20px;
-  padding: 30px;
-  margin: 30px 10px 30px 10px;
-}
-
-p {
+.tekster_grid_1_1_1 p {
   line-height: 30px;
   color: var(--farve3);
 }
 
+.forside_tekst,
+.info_tekst,
+.about_us {
+  background-color: var(--baggrund);
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 30px 10px 10px 10px;
+}
+
+.forside_tekst img,
+.info_tekst img,
+.about_us img {
+  height: 40%;
+  padding-bottom: 60px;
+}
+
 @media (min-width: 800px) {
-  .tekster_grid_1_1 {
+  .tekster_grid_1_1_1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
 
