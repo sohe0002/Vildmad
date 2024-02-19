@@ -1,6 +1,6 @@
 body {
   background-color: var(--baggrund);
-  cursor: url("./ikoner/pil2.svg"), auto;
+  /* cursor: url("./ikoner/pil2.svg"), auto; */
 }
 * {
   box-sizing: border-box;
@@ -8,14 +8,22 @@ body {
 main {
   margin-inline: auto;
 }
-.wheel_box {
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  place-items: center;
-  width: 300px;
+@media (max-width: 800px) {
+  .circle-container {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+    width: 300px;
+    list-style: none;
+  }
+  .wheel p {
+    text-align: center;
+    color: var(--farve3);
+  }
 }
+
 .wheel {
   display: flex;
   align-items: center;
@@ -56,6 +64,15 @@ a {
   text-decoration: none;
 }
 @media (min-width: 800px) {
+  .wheel_box li {
+    margin-inline: auto;
+    display: grid;
+    gap: 10px;
+    place-items: center;
+  }
+  /* .wheel_box {
+    grid-template-columns: 1fr;
+  } */
   /* billederen roter der inden fjern img  */
   .circle-container img {
     display: block;
@@ -88,7 +105,7 @@ a {
     padding: 0;
     list-style: none;
     margin: 5rem auto 0;
-    border: solid 5px tomato;
+    border: solid 5px var(--baggrund);
   }
 
   .circle-container > * {
@@ -148,9 +165,19 @@ a {
     flex-direction: column;
     padding-top: 2px;
     background-color: #fffef8;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 130px;
+    clip-path: polygon(
+      0% 15%,
+      15% 85%,
+      30% 95%,
+      70% 95%,
+      85% 85%,
+      100% 15%,
+      85% 0%,
+      15% 0%
+    );
+
     /* clip-path: polygon(
       0% 15%,
       15% 85%,

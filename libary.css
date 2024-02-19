@@ -91,6 +91,13 @@ main section {
   padding-left: 120px;
   padding-right: 20px;
 }
+.active {
+  text-decoration: none;
+  font-family: "h1" Helvetica, sans-serif, Arial;
+  font-weight: 800;
+  /* font-size: 1.16em; */
+  color: var(--farve2);
+}
 
 @media (min-width: 800px) {
   body {
