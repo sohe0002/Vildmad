@@ -8,6 +8,7 @@ body {
 main {
   margin-inline: auto;
 }
+
 @media (max-width: 800px) {
   .circle-container {
     margin-inline: auto;
@@ -63,7 +64,14 @@ img {
 a {
   text-decoration: none;
 }
+
+.wheel_footer {
+  width: 100%;
+}
 @media (min-width: 800px) {
+  main {
+    height: 1400px;
+  }
   .wheel_box li {
     margin-inline: auto;
     display: grid;
