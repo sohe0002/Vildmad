@@ -29,6 +29,7 @@
 body {
   font-size: 16px; /* Fallback for ældre browsere */
   font-size: 1em; /* Standard størrelse for moderne browsere, 1em = 16px */
+  margin: 0;
   background-color: var(--baggrund);
 }
 

@@ -1,3 +1,7 @@
+.top_footer_billede {
+  margin-bottom: -10px;
+}
+
 ol li {
   list-style: none;
   text-decoration: none;
@@ -46,11 +50,16 @@ main,
   background-color: var(--baggrund);
 }
 #months {
-  padding: 20px 0px 0px 20px;
+  padding: 20px 0px 0px 0px;
   position: fixed;
   z-index: 100;
 }
-.active h2 {
+
+#months li {
+  font-size: 10px;
+}
+
+#months .active h2 {
   font-family: Helvetica, sans-serif, Arial;
   font-size: 2em;
   font-weight: 600;
@@ -134,7 +143,7 @@ transition: 1s; */
 main section {
   /* height: 100vh; */
 
-  padding-left: 300px;
+  padding-left: 150px;
 }
 section img {
   /* width: 30%; */
@@ -152,6 +161,7 @@ box-sizing: border-box;
 
 .indhold {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: rgba(0, 0, 255, 0);
   height: auto;
@@ -169,12 +179,13 @@ box-sizing: border-box;
   top: 0;
   z-index: 1000; /* Justér om nødvendigt for at håndtere lagpositionering */
 }
-/* .kort {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: subgrid;
-grid-row: span 2;
-} */
+.kort {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+}
+
 .svamp_linje {
   aspect-ratio: 1/1;
   width: 60px;

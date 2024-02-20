@@ -44,7 +44,7 @@ main {
   scale: 110%;
   transition: 0.2s;
 }
-img {
+.ikoner {
   width: 40%;
 }
 .top {
@@ -72,6 +72,11 @@ a {
 .wheel_footer {
   width: 100%;
 }
+
+.top_footer_billede {
+  margin-bottom: -10px;
+}
+
 @media (min-width: 800px) {
   main {
     height: 1400px;
@@ -223,7 +228,7 @@ a {
     text-align: center;
   } */
 
-  img {
+  .ikoner {
     width: 50%;
   }
   .wheel_box h2 {
