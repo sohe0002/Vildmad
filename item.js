@@ -20,7 +20,10 @@ function showItem(item) {
   //tilføj indhold
   document.querySelector(".img_svamp").src = data.image;
   document.querySelector(".navn_svamp").textContent = data.title;
-  document.querySelector(".description p").textContent = data.beskrivelse;
+  document.querySelector(".description .beskrivelse").textContent =
+    data.beskrivelse;
+  document.querySelector(".description .intro_beskrivelse").textContent =
+    data.intro;
   document.querySelector(".sankested_sted").textContent = data.sankested_sted;
   document.querySelector(".sankested_tekst").textContent = data.sankested_tekst;
   document.querySelector(".foraging p").textContent = data.sankning;
