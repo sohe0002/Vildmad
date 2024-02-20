@@ -84,10 +84,16 @@ header {
 }
 
 .head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.navn_header p {
+  padding-left: 20px;
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: 1.3em;
+  color: var(--farve1);
+  letter-spacing: 1px;
 }
 
 ul#menu {
@@ -99,7 +105,7 @@ ul#menu {
 }
 
 ul#menu li a.active {
-  text-decoration: underline;
+  font-family: "h1", Helvetica, sans-serif, Arial;
 }
 .logo img {
   width: 60px;
