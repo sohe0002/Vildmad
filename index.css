@@ -22,6 +22,10 @@ footer {
   height: 60px;
 }
 
+.knap:hover {
+  cursor: pointer;
+}
+
 .knap {
   background-color: var(--farve7);
   border: 2px solid var(--farve1);

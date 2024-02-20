@@ -1,7 +1,11 @@
-.head {
+header {
+  overflow: hidden;
   position: sticky;
-  z-index: 2000;
-  top: 0;
+  top: 0%;
+  z-index: 10000;
+  left: 0%;
+  width: 100%;
+  background-color: var(--baggrund);
 }
 
 ol li {
@@ -48,6 +52,7 @@ main,
 #months {
   padding: 20px 0px 0px 20px;
   position: fixed;
+  z-index: 100;
 }
 .active h2 {
   font-family: Helvetica, sans-serif, Arial;
@@ -119,6 +124,74 @@ main section {
   font-weight: 800;
   /* font-size: 1.16em; */
   color: var(--farve2);
+}
+
+body {
+  font-size: 1em;
+}
+main {
+  /* scroll-behavior: smooth;
+transition: 1s; */
+  margin: 40px;
+}
+
+main section {
+  /* height: 100vh; */
+
+  padding-left: 300px;
+}
+section img {
+  /* width: 30%; */
+  border-radius: 50%;
+}
+
+#months {
+  position: fixed;
+}
+
+/* .linje {
+border-bottom: 4px solid var(--farve1);
+box-sizing: border-box;
+} */
+
+.indhold {
+  display: grid;
+  gap: 20px;
+  background-color: rgba(0, 0, 255, 0);
+  height: auto;
+}
+.indhold img {
+  width: 100%;
+
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.hold {
+  padding-top: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Justér om nødvendigt for at håndtere lagpositionering */
+}
+/* .kort {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: subgrid;
+grid-row: span 2;
+} */
+.svamp_linje {
+  aspect-ratio: 1/1;
+  width: 60px;
+  border-radius: 0%;
+  transform: translateY(32px);
+}
+/* .indhold.active.svamp_linje {
+transform: translateY(20px);
+} */
+.streg_flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--farve1);
 }
 
 @media (min-width: 800px) {
