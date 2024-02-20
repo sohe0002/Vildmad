@@ -7,7 +7,12 @@
   font-family: "mire1";
   src: url(./fonte/MierA-Regular.woff2);
 }
-
+::selection {
+  background-color: var(
+    --farve1
+  ); /* Ændrer baggrundsfarven på den markerede tekst */
+  color: var(--baggrund); /* Ændrer tekstfarven på den markerede tekst */
+}
 /* farver */
 :root {
   --baggrund: #f5f3e5;
@@ -24,7 +29,9 @@
 body {
   font-size: 16px; /* Fallback for ældre browsere */
   font-size: 1em; /* Standard størrelse for moderne browsere, 1em = 16px */
+  background-color: var(--baggrund);
 }
+
 h1 {
   font-family: "h1", Helvetica, sans-serif, Arial;
   font-weight: 400;
@@ -83,8 +90,9 @@ header {
 }
 
 .head {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .navn_header p {
@@ -101,6 +109,7 @@ ul#menu {
   flex-direction: row;
   justify-content: space-evenly;
   gap: 30px;
+  align-items: center;
 }
 
 ul#menu li a.active {
@@ -108,6 +117,17 @@ ul#menu li a.active {
 }
 .logo img {
   width: 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo p {
+  font-family: "h1", Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 2em;
+  color: var(--farve1);
 }
 ul#menu li a {
   text-decoration: none;

@@ -3,8 +3,11 @@ body {
   /* cursor: url("./ikoner/pil2.svg"), auto; */
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 main {
   margin-inline: auto;
 }
@@ -28,6 +31,7 @@ main {
 .wheel {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding-top: 2px;
   background-color: #fffef8;
@@ -169,6 +173,7 @@ a {
   }
   .wheel {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 2px;
