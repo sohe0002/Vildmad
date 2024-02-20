@@ -71,7 +71,16 @@ h2 {
   font-size: 1.6em;
   color: var(--farve2);
 }
-/* heeder */
+/* header */
+header {
+  overflow: hidden;
+  position: sticky;
+  top: 0%;
+  z-index: 10000;
+  left: 0%;
+  width: 100%;
+  background-color: var(--baggrund);
+}
 
 .head {
   display: flex;
@@ -87,6 +96,10 @@ ul#menu {
   justify-content: space-evenly;
   gap: 30px;
 }
+
+ul#menu li a.active {
+  text-decoration: underline;
+}
 .logo img {
   width: 60px;
 }
@@ -98,14 +111,6 @@ ul#menu li a {
   color: var(--farve3);
 }
 
-/*active classen er udkommenteret*/
-/*.active {
-  text-decoration: none;
-  font-family: "h1" Helvetica, sans-serif, Arial;
-  font-weight: 400;
-  font-size: 1.16em;
-  color: var(--farve2);
-} */
 footer {
   position: relative;
   z-index: 200;
