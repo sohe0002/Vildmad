@@ -219,6 +219,11 @@ footer h2 {
   font-family: "mire1";
 }
 
+.knap2:hover {
+  scale: 110%;
+  transition: 0.2s;
+}
+
 @media (min-width: 800px) {
   .footer_grid_1_1_1 {
     display: grid;

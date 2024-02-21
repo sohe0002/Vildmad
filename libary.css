@@ -226,6 +226,14 @@ transform: translateY(20px);
     position: fixed;
   }
 
+  #months li {
+    font-size: 16px;
+  }
+
+  .streg_flex h2 {
+    padding-top: 10px;
+  }
+
   /* .linje {
   border-bottom: 4px solid var(--farve1);
   box-sizing: border-box;
