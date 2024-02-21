@@ -154,6 +154,14 @@ section img {
   position: fixed;
 }
 
+.footer_pictures2 img {
+  width: 150px;
+}
+
+.kort:hover .hover_tekst {
+  font-weight: bold;
+}
+
 /* .linje {
 border-bottom: 4px solid var(--farve1);
 box-sizing: border-box;

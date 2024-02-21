@@ -48,7 +48,7 @@ footer {
 
   position: absolute;
   z-index: 100;
-  top: 325px;
+  top: 343px;
   left: 5%;
   max-width: 50px;
   transform: translate(-40%, -10%);
@@ -83,6 +83,14 @@ footer {
   padding-top: 250px;
 }
 
+.allSvampe h2 {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 550;
+  font-size: 2em;
+  color: var(--farve3);
+  margin-bottom: 10px;
+}
+
 .tekster {
   background-color: var(--baggrund);
   padding: 30px;
@@ -114,6 +122,11 @@ footer {
   border-radius: 20px;
   padding: 30px;
   margin-bottom: 30px;
+}
+
+.season,
+.sankested_sted {
+  font-weight: 501;
 }
 
 p {

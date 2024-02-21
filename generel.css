@@ -29,7 +29,6 @@
 body {
   font-size: 16px; /* Fallback for ældre browsere */
   font-size: 1em; /* Standard størrelse for moderne browsere, 1em = 16px */
-  margin: 0;
   background-color: var(--baggrund);
 }
 
@@ -43,7 +42,7 @@ h1 {
 p {
   font-family: Helvetica, sans-serif, Arial;
   font-weight: 400;
-  font-size: 1, 25em;
+  font-size: 1.25em;
 }
 
 .wheel h2 {
@@ -155,6 +154,7 @@ footer h2 {
 .footer_pictures {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 50%;
 }
 
 .footer_pictures2 {
@@ -167,8 +167,7 @@ footer h2 {
 }
 .cooperates {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  gap: 20px;
+  grid-template-rows: 1fr 1.75fr;
 }
 
 .footer_pictures img {
