@@ -154,6 +154,7 @@ footer h2 {
 .footer_pictures {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 50%;
 }
 
 .footer_pictures2 {
@@ -166,8 +167,7 @@ footer h2 {
 }
 .cooperates {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  gap: 20px;
+  grid-template-rows: 1fr 1.75fr;
 }
 
 .footer_pictures img {
@@ -216,6 +216,11 @@ footer h2 {
   margin-bottom: 20px;
   font-size: 16px;
   font-family: "mire1";
+}
+
+.knap2:hover {
+  scale: 110%;
+  transition: 0.2s;
 }
 
 @media (min-width: 800px) {

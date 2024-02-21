@@ -10,6 +10,11 @@ body {
 
 main {
   margin-inline: auto;
+  height: 680px;
+}
+
+.footer_pictures2 img {
+  width: 150px;
 }
 
 @media (max-width: 800px) {
@@ -51,12 +56,18 @@ main {
   display: none;
 }
 
+.wheel_text_box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .wheel_text_box h3 {
   text-align: center;
   font-family: "h1", Helvetica, sans-serif, Arial;
   font-weight: 400;
   font-size: 1.6em;
   color: var(--farve2);
+  padding-bottom: 15px;
 }
 .wheel_text_box p {
   text-align: center;
@@ -79,7 +90,7 @@ a {
 
 @media (min-width: 800px) {
   main {
-    height: 1400px;
+    height: 1100px;
   }
   .wheel_box li {
     display: grid;
@@ -251,7 +262,7 @@ a {
     display: block;
     font-family: "h1", Helvetica, sans-serif, Arial;
     font-weight: 400;
-    font-size: 6em;
+    font-size: 4em;
     color: var(--farve2);
   }
 }
