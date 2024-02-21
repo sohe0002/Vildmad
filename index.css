@@ -24,20 +24,25 @@ footer {
 
 .knap:hover {
   cursor: pointer;
+  background-color: var(--farve1);
+  color: white;
 }
 
 .knap {
   background-color: var(--farve7);
   border: 2px solid var(--farve1);
+  color: var(--farve3);
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, 120%);
   text-align: center;
-  font-family: "mire1";
+  font-family: "h1", Helvetica, sans-serif, Arial;
+  font-weight: 500;
+  font-size: 0.8em;
 }
 
 .forside_h1 {
@@ -47,17 +52,17 @@ footer {
   left: 50%;
   transform: translate(-50%, -205%);
   text-align: center;
-  font-size: 64px;
+  font-size: 55px;
 }
 
 .forside_h2 {
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -105%);
   text-align: center;
-  font-size: 27px;
+  font-size: 23px;
   font-family: "mire1";
 }
 
@@ -94,6 +99,44 @@ footer {
 }
 
 @media (min-width: 800px) {
+  .knap {
+    background-color: var(--farve7);
+    border: 2px solid var(--farve1);
+    color: var(--farve3);
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    text-align: center;
+    font-family: "h1", Helvetica, sans-serif, Arial;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+
+  .forside_h1 {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -205%);
+    text-align: center;
+    font-size: 75px;
+  }
+
+  .forside_h2 {
+    position: absolute;
+    z-index: 100;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -105%);
+    text-align: center;
+    font-size: 25px;
+    font-family: "mire1";
+  }
+
   .tekster_grid_1_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
