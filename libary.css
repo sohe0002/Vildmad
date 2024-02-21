@@ -27,6 +27,7 @@ a {
   font-size: 1.4em;
   font-weight: 400;
 }
+
 #months h2 {
   padding: 0px;
   color: var(--farve2);
@@ -50,6 +51,7 @@ main,
   background-color: var(--baggrund);
 }
 #months {
+  display: none;
   padding: 20px 0px 0px 0px;
   position: fixed;
   z-index: 100;
@@ -91,7 +93,7 @@ section h2 {
   text-align: center;
 }
 .hold {
-  padding-top: 80px;
+  padding-top: 100px;
   position: sticky;
   top: 0;
   z-index: 1000; /* Justér om nødvendigt for at håndtere lagpositionering */
@@ -143,15 +145,11 @@ transition: 1s; */
 main section {
   /* height: 100vh; */
 
-  padding-left: 150px;
+  padding-left: 0px;
 }
 section img {
   /* width: 30%; */
   border-radius: 50%;
-}
-
-#months {
-  position: fixed;
 }
 
 .footer_pictures2 img {
@@ -181,12 +179,6 @@ box-sizing: border-box;
   object-fit: cover;
 }
 
-.hold {
-  padding-top: 80px;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Justér om nødvendigt for at håndtere lagpositionering */
-}
 .kort {
   display: grid;
   grid-template-columns: 1fr;
@@ -198,7 +190,7 @@ box-sizing: border-box;
   aspect-ratio: 1/1;
   width: 60px;
   border-radius: 0%;
-  transform: translateY(32px);
+  transform: translateY(12px);
 }
 /* .indhold.active.svamp_linje {
 transform: translateY(20px);
@@ -210,6 +202,10 @@ transform: translateY(20px);
 }
 
 @media (min-width: 800px) {
+  .logo a p {
+    font-size: 1.5em;
+  }
+
   body {
     font-size: 1em;
   }
@@ -230,6 +226,7 @@ transform: translateY(20px);
   }
 
   #months {
+    display: block;
     padding: 0px 0px 0px 40px;
     position: fixed;
   }
@@ -277,7 +274,7 @@ transform: translateY(20px);
     aspect-ratio: 1/1;
     width: 60px;
     border-radius: 0%;
-    transform: translateY(17px);
+    transform: translateY(12px);
   }
   /* .indhold.active.svamp_linje {
   transform: translateY(20px);
