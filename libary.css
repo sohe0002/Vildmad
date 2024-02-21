@@ -200,7 +200,9 @@ transform: translateY(20px);
   justify-content: space-between;
   border-bottom: 4px solid var(--farve1);
 }
-
+.streg_flex h2 {
+  padding-top: 10px;
+}
 @media (min-width: 800px) {
   body {
     font-size: 1em;
@@ -228,10 +230,6 @@ transform: translateY(20px);
 
   #months li {
     font-size: 16px;
-  }
-
-  .streg_flex h2 {
-    padding-top: 10px;
   }
 
   /* .linje {
