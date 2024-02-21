@@ -82,10 +82,10 @@ a {
     height: 1400px;
   }
   .wheel_box li {
-    margin-inline: auto;
     display: grid;
     gap: 10px;
     place-items: center;
+    justify-content: center;
   }
   /* .wheel_box {
     grid-template-columns: 1fr;
@@ -111,8 +111,9 @@ a {
 
   :root {
     --num-elements: 12;
-    --circle-radius: 40rem;
-    font-size: 16px;
+    --circle-radius: 35rem;
+    --font-size: 16px;
+    --deg: 1000;
   }
   .circle-container {
     position: relative;
@@ -130,7 +131,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -3rem;
+    margin: -3.2rem;
     width: 6rem;
     height: 6rem;
     transform: rotate(calc(360 / var(--num-elements) * var(--deg)))
@@ -141,40 +142,40 @@ a {
     transform: rotate(calc(90deg + (30 * var(--deg))));
   }
   .circle-container > *:nth-of-type(1) {
-    --deg: 1deg;
-  }
-  .circle-container > *:nth-of-type(2) {
-    --deg: 2deg;
-  }
-  .circle-container > *:nth-of-type(3) {
-    --deg: 3deg;
-  }
-  .circle-container > *:nth-of-type(4) {
-    --deg: 4deg;
-  }
-  .circle-container > *:nth-of-type(5) {
-    --deg: 5deg;
-  }
-  .circle-container > *:nth-of-type(6) {
-    --deg: 6deg;
-  }
-  .circle-container > *:nth-of-type(7) {
-    --deg: 7deg;
-  }
-  .circle-container > *:nth-of-type(8) {
-    --deg: 8deg;
-  }
-  .circle-container > *:nth-of-type(9) {
     --deg: 9deg;
   }
-  .circle-container > *:nth-of-type(10) {
+  .circle-container > *:nth-of-type(2) {
     --deg: 10deg;
   }
-  .circle-container > *:nth-of-type(11) {
+  .circle-container > *:nth-of-type(3) {
     --deg: 11deg;
   }
-  .circle-container > *:nth-of-type(12) {
+  .circle-container > *:nth-of-type(4) {
     --deg: 12deg;
+  }
+  .circle-container > *:nth-of-type(5) {
+    --deg: 1deg;
+  }
+  .circle-container > *:nth-of-type(6) {
+    --deg: 2deg;
+  }
+  .circle-container > *:nth-of-type(7) {
+    --deg: 3deg;
+  }
+  .circle-container > *:nth-of-type(8) {
+    --deg: 4deg;
+  }
+  .circle-container > *:nth-of-type(9) {
+    --deg: 5deg;
+  }
+  .circle-container > *:nth-of-type(10) {
+    --deg: 6deg;
+  }
+  .circle-container > *:nth-of-type(11) {
+    --deg: 7deg;
+  }
+  .circle-container > *:nth-of-type(12) {
+    --deg: 8deg;
   }
   .wheel {
     display: flex;
@@ -236,6 +237,14 @@ a {
     font-weight: 400;
     font-size: 2.25em;
     color: var(--farve2);
+  }
+  .wheel_text_box {
+    width: 300px;
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   .top {
     text-align: center;
