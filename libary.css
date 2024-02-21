@@ -284,4 +284,8 @@ transform: translateY(20px);
     justify-content: space-between;
     border-bottom: 4px solid var(--farve1);
   }
+
+  .listFoot {
+    margin-top: 80px;
+  }
 }

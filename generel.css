@@ -41,7 +41,7 @@ h1 {
 p {
   font-family: Helvetica, sans-serif, Arial;
   font-weight: 400;
-  font-size: 1, 25em;
+  font-size: 1.25em;
 }
 
 .wheel h2 {
@@ -86,6 +86,10 @@ header {
   left: 0%;
   width: 100%;
   background-color: var(--baggrund);
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo p {
