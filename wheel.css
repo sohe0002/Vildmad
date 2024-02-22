@@ -46,7 +46,7 @@ main {
 }
 
 .wheel:hover {
-  scale: 110%;
+  transform: scale(1.1);
   transition: 0.2s;
 }
 .ikoner {

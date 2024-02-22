@@ -288,4 +288,7 @@ transform: translateY(20px);
   .listFoot {
     margin-top: 80px;
   }
+  #December {
+    margin-bottom: 200px;
+  }
 }
