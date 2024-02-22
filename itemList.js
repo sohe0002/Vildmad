@@ -18,6 +18,7 @@ function showData(items) {
   console.log(items);
   //looper og kalder showItem
   items.forEach(showItem);
+  window.location.href = window.location.href;
 }
 
 function showItem(item) {
@@ -35,9 +36,7 @@ function showItem(item) {
     // Ændre indholdet af den klonede HTML.
     copy.querySelector("img").src = item.image;
     copy.querySelector("p").textContent = item.title;
-    copy
-      .querySelector(".link")
-      .setAttribute("href", `svamp.html?id=${item.id}`);
+    copy.querySelector(".link").setAttribute("href", `svamp.html?id=${item.id}`);
 
     // Tilføj den klonede HTML til passende månedens sektion.
     //appende
